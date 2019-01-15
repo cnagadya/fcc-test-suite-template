@@ -2,53 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   </head>
 
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">
-      Lorem ipsum dolor sit amet, reprimique interpretaris mei te, vel veri
-      prima ut, porro tantas signiferumque ad nam. Cu has aperiam forensibus
-      reprehendunt, et iriure debitis sed. Illud perfecto eum ad, dicant
-      complectitur consectetuer an per. Soleat offendit scripserit eam ad, minim
-      facilisi sed ad, meliore luptatum no vim. Nam invenire oportere an. Eum
-      iriure atomorum eu, ius dolorum eligendi maiestatis ea. Vim assum putent
-      aeterno te, per et primis docendi interesset. Diceret hendrerit te vix.
-      Vel ut erat summo libris. Cum at solet accusamus assueverit, sed cu illud
-      dolore scripserit.
-    </p>
-    <form id="survey-form">
-      <label id="name-label">Name</label>
-      <input type="text" id="name" placeholder="name" required>
-      <label id="email-label">Email Address</label>
-      <input type="email" id="email" placeholder="email" required>
-      <label id="number-label">Number</label>
-      <input type="number" id="number"  placeholder="number" required min="0" max="16">
-      <select id="dropdown">
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-      </select>
-      <input type="radio" name="alpha" value="a" checked>a</input>
-      <input type="radio" name="alpha" value="b">b</input>
-      <input type="radio" name="alpha" value="c">c</input>
-      <input type="radio" name="alpha" value="d">d</input>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Lorem ipsum dolor sit amet, reprimique interpretaris mei te, vel veri
+        prima ut, porro tantas signiferumque ad nam. Cu has aperiam forensibus
+        reprehendunt, et iriure debitis sed. Illud perfecto eum ad, dicant
+        complectitur consectetuer an per. Soleat offendit scripserit eam ad, minim
+        facilisi sed ad, meliore luptatum no vim. Nam invenire oportere an. Eum
+        iriure atomorum eu, ius dolorum eligendi maiestatis ea. Vim assum putent
+        aeterno te, per et primis docendi interesset. Diceret hendrerit te vix.
+        Vel ut erat summo libris. Cum at solet accusamus assueverit, sed cu illud
+        dolore scripserit.
+      </p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name</label>
+          <input type="text" id="name" placeholder="name" required class="form-control">
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email Address</label>
+          <input type="email" id="email" placeholder="email" required class="form-control">
+        </div>
+        <div class="form-group">
+          <label id="number-label">Number</label>
+          <input type="number" id="number"  placeholder="number" required min="0" max="16" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Select</label>
+          <select id="dropdown" class="form-control">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="mr-sm-3">Alpha Radio Buttons</label>
+          <input type="radio" name="alpha" value="a" checked>a</input>
+          <input type="radio" name="alpha" value="b" class="ml-sm-2">b</input>
+          <input type="radio" name="alpha" value="c" class="ml-sm-2">c</input>
+          <input type="radio" name="alpha" value="d" class="ml-sm-2">d</input>
+        </div>
+        <div class="form-group">
+          <label  class="mr-sm-3">Numeric Radio Buttons</label>
+          <input type="radio" name="numeric" value="1">1</input>
+          <input type="radio" name="numeric" value="2" class="ml-sm-2">2</input>
+          <input type="radio" name="numeric" value="3" class="ml-sm-2">3</input>
+          <input type="radio" name="numeric" value="4" class="ml-sm-2" checked>4</input>
+        </div>
+        <div class="form-group">
+          <label class="mr-sm-3">Checkboxes</label>
+          <input type="checkbox" value="fries">Fries</input>
+          <input type="checkbox" value="chicken">Chicken</input>
+        </div>
 
-      <input type="radio" name="numeric" value="1">1</input>
-      <input type="radio" name="numeric" value="2">2</input>
-      <input type="radio" name="numeric" value="3">3</input>
-      <input type="radio" name="numeric" value="4" checked>4</input>
-
-      <input type="checkbox" value="fries">Fries</input>
-      <input type="checkbox" value="chicken">Chicken</input>
-
-      <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
-      <button id="submit">submit</button>
-    
-    </form>
-
+        <textarea name="bio" id="bio" cols="30" rows="10" col-sm-10 class="form-control"></textarea>
+        <button id="submit" class="btn btn-dark mt-3 float-right">submit</button>
+      
+      </form>
+    </div>
 
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
