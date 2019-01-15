@@ -5,6 +5,23 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+      @media only screen and (min-width: 650px) {
+        body {
+          background-color:lightseagreen;
+        }
+      }
+      @media only screen and (max-width: 650px) {
+        body {
+          background-color:lightblue
+        }
+      }
+
+      form {
+        width: 50%;
+      }
+
+    </style>
   </head>
 
   <body>
@@ -23,19 +40,19 @@
       </p>
       <form id="survey-form">
         <div class="form-group">
-          <label id="name-label">Name</label>
+          <label id="name-label">Name:</label>
           <input type="text" id="name" placeholder="name" required class="form-control">
         </div>
         <div class="form-group">
-          <label id="email-label">Email Address</label>
+          <label id="email-label">Email Address:</label>
           <input type="email" id="email" placeholder="email" required class="form-control">
         </div>
         <div class="form-group">
-          <label id="number-label">Number</label>
+          <label id="number-label">Number:</label>
           <input type="number" id="number"  placeholder="number" required min="0" max="16" class="form-control">
         </div>
         <div class="form-group">
-          <label>Select</label>
+          <label>Select:</label>
           <select id="dropdown" class="form-control">
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>
@@ -43,21 +60,21 @@
           </select>
         </div>
         <div class="form-group">
-          <label class="mr-sm-3">Alpha Radio Buttons</label>
+          <label class="mr-sm-3">Alpha Radio Buttons:</label>
           <input type="radio" name="alpha" value="a" checked>a</input>
           <input type="radio" name="alpha" value="b" class="ml-sm-2">b</input>
           <input type="radio" name="alpha" value="c" class="ml-sm-2">c</input>
           <input type="radio" name="alpha" value="d" class="ml-sm-2">d</input>
         </div>
         <div class="form-group">
-          <label  class="mr-sm-3">Numeric Radio Buttons</label>
+          <label  class="mr-sm-3">Numeric Radio Buttons:</label>
           <input type="radio" name="numeric" value="1">1</input>
-          <input type="radio" name="numeric" value="2" class="ml-sm-2">2</input>
+          <input type ="radio" name="numeric" value="2" class="ml-sm-2">2</input>
           <input type="radio" name="numeric" value="3" class="ml-sm-2">3</input>
           <input type="radio" name="numeric" value="4" class="ml-sm-2" checked>4</input>
         </div>
         <div class="form-group">
-          <label class="mr-sm-3">Checkboxes</label>
+          <label class="mr-sm-3">Checkboxes:</label>
           <input type="checkbox" value="fries">Fries</input>
           <input type="checkbox" value="chicken">Chicken</input>
         </div>
